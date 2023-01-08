@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar navbar-dark  bg-danger fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-lg  bg-danger fixed-top shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="static/images/logo.jpg" alt="Bootstrap" width="30" height="24">
                 Médiathèque Ouakam</a>
@@ -47,16 +47,27 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="rechercher un livre" aria-label="Search">
+                    <button class="btn btn-outline-light success" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5 pb-5">
+    <div class="container mt-5 pt-5">
         <div class="row">
-            <div class="col-md-6 offset-md-3">
+            <div class="col-3 d-none d-sm-block d-md-nonee">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action bg-danger text-white fw-bold" aria-current="true">
+                      Catégories
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Roman</a>
+                    <a href="#" class="list-group-item list-group-item-action">Fiction - jeunesse</a>
+                    <a href="#" class="list-group-item list-group-item-action">Documentaire</a>
+                    <a class="list-group-item list-group-item-action disabled">Manuel scolaire</a>
+                  </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card shadow">
                     <div class="card-body p-0">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -112,12 +123,13 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-12 bg-danger text-white">
+            <div class="col-12 bg-danger text-white shadow">
                 <div class="px-3 py-2">
                     <h4>Top livres</h4>
                 </div>
             </div>
         </div>
+
         <div class="row mt-2 g-2">
             <div class="col-md-3 col-6">
                 <div class="card shadow">
@@ -137,6 +149,14 @@
                         <p class="card-text"> Teste text description</p>
                         <a href="#" class="btn btn-success fw-bold">Consulter</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 bg-danger text-white shadow">
+                <div class="px-3 py-2 d-flex">
+                    <h4>Romans - harlequin</h4>
                 </div>
             </div>
         </div>
